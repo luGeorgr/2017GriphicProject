@@ -1,6 +1,7 @@
 #pragma once
 #include"Observer.h"
 #include"Observable.h"
+#include"BasicCommand.h"
 class ViewModel: public Observer, public Observable
 {
 public:

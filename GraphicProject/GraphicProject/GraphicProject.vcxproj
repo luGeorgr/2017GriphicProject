@@ -112,13 +112,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BasicCommand.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="Draw.h" />
     <ClInclude Include="Model.h" />
+    <ClInclude Include="Object.h" />
     <ClInclude Include="Observable.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="View.h" />
     <ClInclude Include="ViewModel.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Draw.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="View.cpp" />
