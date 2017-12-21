@@ -27,9 +27,9 @@ public:
 		}
 	}
 
-	void notify(const Params& params) {
+	void notify(const int state) {
 		for (auto it : ObserverList) {
-			it->Update(params);
+			it->Update(state);
 		}
 	}
 };

@@ -3,8 +3,8 @@
 #include<vector>
 #include<string>
 #include"Data.h"
+#include"Model.h"
 using std::shared_ptr;
-class Model;
 class BasicCommand {
 protected:
 	Params params;
@@ -14,7 +14,11 @@ public:
 	BasicCommand(shared_ptr<Model> pmodel = nullptr) :pmodel(pmodel) {}
 
 	void SetParams(const Params& params) {
-		this->params.SetParams(params.GetIntParams(), params.GetFloatParams(), params.GetStringParams());
+		this->params = params;
+	}
+
+	const Params& GetResults() {
+		return resultParams;
 	}
 	virtual void exec() = 0;
 };

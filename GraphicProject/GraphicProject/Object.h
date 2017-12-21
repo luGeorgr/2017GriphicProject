@@ -6,6 +6,7 @@ public:
 	Object();
 	~Object();
 	int getID() { return ID; }
+	int getDrawMethod() { return drawMethod; }
 	vector<float>& getPoint() { return point3; }
 	vector<float>& getNormal() { return normal3; }
 	vector<float>& gettexCoord() { return texCoord3; }
@@ -13,10 +14,16 @@ public:
 	float* getPosition() { return position; }
 	float* getScale() { return scale; }
 	float* getRotate() { return rotate; }
-	int setColor(float* input) { for (int i = 0; i < 3; i++) { color[i] = input[i]; } }
-	int setPosition(float* input) { for (int i = 0; i < 3; i++) { position[i] = input[i]; } }
-	int setScale(float* input) { for (int i = 0; i < 3; i++) { scale[i] = input[i]; } }
-	int setRotate(float* input) { for (int i = 0; i < 3; i++) { rotate[i] = input[i]; } }
+	void setColor(float R, float G, float B) {	color[0] = R; color[1] = G;	color[2] = B;}
+	void setPosition(float x, float y, float z) { position[0] = x; position[1] = y; position[2] = z; }
+	void setScale(float xScale, float yScale, float zScale) { scale[0] = xScale; scale[1] = yScale; scale[2] = zScale; }
+	void setRotate(float xRotate, float yRotate, float zRotate) { rotate[0] = xRotate; rotate[1] = yRotate; rotate[2] = zRotate; }
+	
+
+	virtual int setPoint() = 0;
+	virtual int setNormal() = 0;
+	virtual int setTexCoord() = 0;
+	virtual int setDrawMethod() = 0;
 protected:
 	static int count;
 	int ID;
@@ -28,23 +35,4 @@ protected:
 	vector<float> point3;
 	vector<float> normal3;
 	vector<float> texCoord3;
-	virtual int setPoint() = 0;
-	virtual int setNormal() = 0;
-	virtual int setTexCoord() = 0;
-	virtual int setDrawMethod() = 0;
 };
-
-Object::Object()
-{
-	ID = count++;
-	setPoint();
-	setNormal();
-	setTexCoord();
-	setDrawMethod();
-}
-
-Object::~Object()
-{
-}
-
-int Object::count = 0;

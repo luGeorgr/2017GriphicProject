@@ -1,6 +1,7 @@
 #pragma once
 #include<vector>
-#include<gl\glut.h>
+#include<gl/glut.h>
+
 using std::vector;
 using std::string;
 class Params {
@@ -8,12 +9,23 @@ private:
 	vector<int> intParams;
 	vector<float> floatParams;
 	vector<string> stringParams;
+	vector<vector<float>> vfloatParams;
 public:
-	void SetParams(const vector<int>& intParams, const vector<float>& floatParams, const vector<string>& stringParams)
-	{
+	void SetIntParams(const vector<int>& intParams){
 		this->intParams = intParams;
+	}
+
+	void SetFloatParams(const vector<float>& floatParams) {
 		this->floatParams = floatParams;
+	}
+
+	void SetStringParams(const vector<string>& stringParams) {
 		this->stringParams = stringParams;
+	}
+
+
+	void SetVfloatParmas(const vector<vector<float>>& vfloatParams) {
+		this->vfloatParams = vfloatParams;
 	}
 
 	const vector<int>& GetIntParams() const {
@@ -26,5 +38,10 @@ public:
 
 	const vector<string>& GetStringParams() const {
 		return stringParams;
+	}
+
+
+	const vector<vector<float>>& GetVfloatParams() const {
+		return vfloatParams;
 	}
 };

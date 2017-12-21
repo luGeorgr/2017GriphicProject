@@ -57,6 +57,18 @@
     <ClInclude Include="Draw.h">
       <Filter>头文件\Draw</Filter>
     </ClInclude>
+    <ClInclude Include="DrawCubeCommand.h">
+      <Filter>头文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands.h">
+      <Filter>头文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Changes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetLastObjectInformationCommand.h">
+      <Filter>头文件\Command</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Model.cpp">
@@ -73,6 +85,18 @@
     </ClCompile>
     <ClCompile Include="Draw.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>头文件\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>头文件\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCubeCommand.cpp">
+      <Filter>头文件\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="GetLastObjectInformationCommand.cpp">
+      <Filter>头文件\Command</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
