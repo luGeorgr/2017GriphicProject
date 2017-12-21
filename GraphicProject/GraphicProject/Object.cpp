@@ -1,6 +1,7 @@
 #include"Object.h"
-Object::Object()
+Object::Object(int type)
 {
+	this->type = type;
 	ID = count++;
 }
 

@@ -41,8 +41,9 @@ int main(int argc, char *argv[]) {
 
 	Params test;
 	test.SetFloatParams(vector<float>{1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0});
-	pview->drawCubeCommand->SetParams(test);
-	pview->drawCubeCommand->exec();
+	test.SetIntParams(vector<int>{0});
+	pview->AddObjectCommand->SetParams(test);
+	pview->AddObjectCommand->exec();
 	glutDisplayFunc(display);
 	glutMainLoop();
 	return 0;

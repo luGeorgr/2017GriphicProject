@@ -8,7 +8,7 @@ class View : public Observer
 {
 //public for test
 public:
-	shared_ptr<BasicCommand> drawCubeCommand, getLastObjectInformationCommand;
+	shared_ptr<BasicCommand> AddObjectCommand, getLastObjectInformationCommand;
 
 public:
 	vector<Draw>DrawList;
@@ -19,7 +19,7 @@ public:
 	void SetCommands(vector<shared_ptr<BasicCommand>> commands) 
 	{
 		int index = 0;
-		drawCubeCommand = commands[index++];
+		AddObjectCommand = commands[index++];
 		getLastObjectInformationCommand = commands[index++];
 		//ÃüÁîµÄ°ó¶¨
 	}

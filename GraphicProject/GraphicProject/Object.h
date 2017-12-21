@@ -3,7 +3,7 @@
 class Object
 {
 public:
-	Object();
+	Object(int type);
 	~Object();
 	int getID() { return ID; }
 	int getDrawMethod() { return drawMethod; }
@@ -26,6 +26,7 @@ public:
 	virtual int setDrawMethod() = 0;
 protected:
 	static int count;
+	int type;
 	int ID;
 	int drawMethod;//GL_QUADS...
 	float color[3] = {255};

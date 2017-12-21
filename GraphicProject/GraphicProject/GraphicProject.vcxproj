@@ -120,7 +120,8 @@
     <ClInclude Include="Cube.h" />
     <ClInclude Include="Data.h" />
     <ClInclude Include="Draw.h" />
-    <ClInclude Include="DrawCubeCommand.h" />
+    <ClInclude Include="AddObjectCommand.h" />
+    <ClInclude Include="DrawObjectCommand.h" />
     <ClInclude Include="GetLastObjectInformationCommand.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Object.h" />
@@ -132,7 +133,8 @@
   <ItemGroup>
     <ClCompile Include="Cube.cpp" />
     <ClCompile Include="Draw.cpp" />
-    <ClCompile Include="DrawCubeCommand.cpp" />
+    <ClCompile Include="AddObjectCommand.cpp" />
+    <ClCompile Include="DrawObjectCommand.cpp" />
     <ClCompile Include="GetLastObjectInformationCommand.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model.cpp" />

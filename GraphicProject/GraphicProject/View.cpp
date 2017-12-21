@@ -18,7 +18,8 @@ void View::Update(const int state)
 {
 	switch (state)
 	{
-		case ADD_OBJECT:
+	case ADD_OBJECT:break;
+	case DRAW_OBJECT_BASIC:
 		{
 			this->getLastObjectInformationCommand->exec();
 			const Params& temp = getLastObjectInformationCommand->GetResults();

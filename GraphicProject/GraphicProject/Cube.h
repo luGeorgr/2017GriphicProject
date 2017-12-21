@@ -3,7 +3,7 @@
 class Cube :public Object
 {
 public:
-	Cube()
+	Cube():Object(0)
 	{
 		setPoint();
 		setNormal();
