@@ -2,15 +2,9 @@
 
 
 
-ViewModel::ViewModel()
-{
-}
 
 
-ViewModel::~ViewModel()
+void ViewModel::Update(const int state)
 {
-}
-
-void ViewModel::Update(const Params & params)
-{
+	notify(state);
 }

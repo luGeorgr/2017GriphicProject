@@ -1,6 +1,6 @@
 #pragma once
-#include "BasicCommand.h"
+#include "Data.h"
 class Observer {
 public:
-	virtual void Update(const Params& params) = 0;
+	virtual void Update(const int state) = 0;
 };

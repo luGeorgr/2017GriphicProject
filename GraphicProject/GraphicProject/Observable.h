@@ -1,7 +1,7 @@
 #pragma once
 #include<memory>
 #include<vector>
-#include"BasicCommand.h"
+#include"Data.h"
 #include"Observer.h"
 using std::shared_ptr;
 using std::vector;
@@ -27,9 +27,9 @@ public:
 		}
 	}
 
-	void notify(const Params& params) {
+	void notify(const int state) {
 		for (auto it : ObserverList) {
-			it->Update(params);
+			it->Update(state);
 		}
 	}
 };

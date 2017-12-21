@@ -1,0 +1,4 @@
+﻿Model.obj : error LNK2005: "public: __cdecl Object::Object(void)" (??0Object@@QEAA@XZ) 已经在 main.obj 中定义
+Model.obj : error LNK2005: "public: __cdecl Object::~Object(void)" (??1Object@@QEAA@XZ) 已经在 main.obj 中定义
+Model.obj : error LNK2005: "protected: static int Object::count" (?count@Object@@1HA) 已经在 main.obj 中定义
+LINK : fatal error LNK1104: 无法打开文件“glut32.lib”

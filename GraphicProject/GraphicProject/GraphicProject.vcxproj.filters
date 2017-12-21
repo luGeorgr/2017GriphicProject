@@ -13,22 +13,28 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\Command">
+    <Filter Include="头文件\Basic">
+      <UniqueIdentifier>{d9e19128-f858-47d4-80e2-52f44ec88fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Command">
       <UniqueIdentifier>{dd7392db-520e-4f5f-851e-dc7cfdc3a522}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\Basic">
-      <UniqueIdentifier>{d9e19128-f858-47d4-80e2-52f44ec88fb2}</UniqueIdentifier>
+    <Filter Include="头文件\Object">
+      <UniqueIdentifier>{8051e94e-cf01-4ea7-963d-a4a7e66f69df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Draw">
+      <UniqueIdentifier>{c9f95b53-6470-4ed9-8dfa-50e76ab9b77d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Observable.h">
-      <Filter>源文件\Basic</Filter>
+      <Filter>头文件\Basic</Filter>
     </ClInclude>
     <ClInclude Include="Observer.h">
-      <Filter>源文件\Basic</Filter>
+      <Filter>头文件\Basic</Filter>
     </ClInclude>
     <ClInclude Include="BasicCommand.h">
-      <Filter>源文件\Command</Filter>
+      <Filter>头文件\Command</Filter>
     </ClInclude>
     <ClInclude Include="Model.h">
       <Filter>头文件</Filter>
@@ -38,6 +44,30 @@
     </ClInclude>
     <ClInclude Include="View.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>头文件\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>头文件\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
+      <Filter>头文件\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCubeCommand.h">
+      <Filter>头文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands.h">
+      <Filter>头文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Changes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetLastObjectInformationCommand.h">
+      <Filter>头文件\Command</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +82,21 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>头文件\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>头文件\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCubeCommand.cpp">
+      <Filter>头文件\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="GetLastObjectInformationCommand.cpp">
+      <Filter>头文件\Command</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
