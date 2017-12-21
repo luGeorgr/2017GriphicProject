@@ -7,18 +7,16 @@ using std::shared_ptr;
 shared_ptr<Model> pmodel(new Model());
 shared_ptr<ViewModel> pviewModel(new ViewModel(pmodel));
 shared_ptr<View> pview(new View());
-void display() {
+void display() {//it's just a test.We may create light class and eye class.
 	
-
+	glClear(GL_COLOR_BUFFER_BIT);
 	glViewport(0, 0, 600, 400);
 	glMatrixMode(GL_PROJECTION);						
 	glLoadIdentity();																		
-	gluPerspective(45.0f, 600 / 400, 0.1f, 100.0f);
+	gluPerspective(30.0f, 600 / 400, 0.1f, 100.0f);
 	glMatrixMode(GL_MODELVIEW);							
 	glLoadIdentity();
-
-	glClear(GL_COLOR_BUFFER_BIT);
-	glLoadIdentity();
+	gluLookAt(5, 0, 0, 0, 0, 1, 0, 0, 1);
 	for (auto it : pview->DrawList) {
 		printf("hello world");
 		it.DrawObject();
