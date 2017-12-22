@@ -3,7 +3,7 @@ int BasicDraw::DrawObject()
 {
 	glPushMatrix();
 	glColor3fv(color);
-	glTranslatef(position[0], position[1], position[3]);
+	glTranslatef(position[0], position[1], position[2]);
 	glScalef(scale[0], scale[1], scale[2]);
 	glRotatef(rotate[0], 1, 0, 0);
 	glRotatef(rotate[1], 0, 1, 0);
