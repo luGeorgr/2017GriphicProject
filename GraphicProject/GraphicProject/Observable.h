@@ -27,9 +27,9 @@ public:
 		}
 	}
 
-	void notify(const int state) {
+	void notify(const int state, shared_ptr<Params> params = shared_ptr<Params>()) {
 		for (auto it : ObserverList) {
-			it->Update(state);
+			it->Update(state,params);
 		}
 	}
 };

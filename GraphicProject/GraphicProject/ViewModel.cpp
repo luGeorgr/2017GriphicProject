@@ -4,7 +4,7 @@
 
 
 
-void ViewModel::Update(const int state)
+void ViewModel::Update(const int state, shared_ptr<Params> params = shared_ptr<Params>())
 {
-	notify(state);
+	notify(state,params);
 }

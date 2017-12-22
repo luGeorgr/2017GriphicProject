@@ -19,7 +19,7 @@ void display() {//it's just a test.We may create light class and eye class.
 	gluLookAt(5, 0, 0, 0, 0, 1, 0, 0, 1);
 	for (auto it : pview->DrawList) {
 		printf("hello world");
-		it.DrawObject();
+		it->DrawObject();
 	}
 	glutSwapBuffers();
 }
@@ -42,8 +42,11 @@ int main(int argc, char *argv[]) {
 	Params test;
 	test.SetFloatParams(vector<float>{1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0});
 	test.SetIntParams(vector<int>{0});
-	pview->AddObjectCommand->SetParams(test);
-	pview->AddObjectCommand->exec();
+	pview->addObjectCommand->SetParams(test);
+	pview->addObjectCommand->exec();
+	test.SetIntParams(vector<int>{0,-1,0,0,0,0});
+	pview->drawObjectCommand->SetParams(test);
+	pview->drawObjectCommand->exec();
 	glutDisplayFunc(display);
 	glutMainLoop();
 	return 0;

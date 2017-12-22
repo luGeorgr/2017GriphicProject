@@ -22,7 +22,7 @@
     <Filter Include="头文件\Object">
       <UniqueIdentifier>{8051e94e-cf01-4ea7-963d-a4a7e66f69df}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\Draw">
+    <Filter Include="头文件\DrawMethod">
       <UniqueIdentifier>{c9f95b53-6470-4ed9-8dfa-50e76ab9b77d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -54,9 +54,6 @@
     <ClInclude Include="Cube.h">
       <Filter>头文件\Object</Filter>
     </ClInclude>
-    <ClInclude Include="Draw.h">
-      <Filter>头文件\Draw</Filter>
-    </ClInclude>
     <ClInclude Include="Commands.h">
       <Filter>头文件\Command</Filter>
     </ClInclude>
@@ -70,6 +67,15 @@
       <Filter>头文件\Command</Filter>
     </ClInclude>
     <ClInclude Include="DrawObjectCommand.h">
+      <Filter>头文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicDraw.h">
+      <Filter>头文件\DrawMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="GetObjectInformationCommand.h">
+      <Filter>头文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawOneObjectWithOneMethodCommand.h">
       <Filter>头文件\Command</Filter>
     </ClInclude>
   </ItemGroup>
@@ -86,9 +92,6 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Draw.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Object.cpp">
       <Filter>头文件\Object</Filter>
     </ClCompile>
@@ -102,6 +105,15 @@
       <Filter>头文件\Command</Filter>
     </ClCompile>
     <ClCompile Include="DrawObjectCommand.cpp">
+      <Filter>头文件\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="BaiscDraw.cpp">
+      <Filter>头文件\DrawMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="GetObjectInformationCommand.cpp">
+      <Filter>头文件\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawOneObjectWithOneMethodCommand.cpp">
       <Filter>头文件\Command</Filter>
     </ClCompile>
   </ItemGroup>

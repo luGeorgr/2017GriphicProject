@@ -119,10 +119,12 @@
     <ClInclude Include="Commands.h" />
     <ClInclude Include="Cube.h" />
     <ClInclude Include="Data.h" />
-    <ClInclude Include="Draw.h" />
+    <ClInclude Include="BasicDraw.h" />
     <ClInclude Include="AddObjectCommand.h" />
     <ClInclude Include="DrawObjectCommand.h" />
+    <ClInclude Include="DrawOneObjectWithOneMethodCommand.h" />
     <ClInclude Include="GetLastObjectInformationCommand.h" />
+    <ClInclude Include="GetObjectInformationCommand.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Observable.h" />
@@ -132,10 +134,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cube.cpp" />
-    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="BaiscDraw.cpp" />
     <ClCompile Include="AddObjectCommand.cpp" />
     <ClCompile Include="DrawObjectCommand.cpp" />
+    <ClCompile Include="DrawOneObjectWithOneMethodCommand.cpp" />
     <ClCompile Include="GetLastObjectInformationCommand.cpp" />
+    <ClCompile Include="GetObjectInformationCommand.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="Object.cpp" />
