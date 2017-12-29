@@ -5,6 +5,9 @@ void Model::AddObject(const vector<float>& floatParams, const vector<int>& intPa
 	shared_ptr<Object> pobject;
 	if (intParams[0] == 0)
 		pobject = shared_ptr<Object>(new Cube());
+	else if (intParams[0] == 1) {
+		pobject = shared_ptr<Object>(new ObjByRead());
+	}
 	pobject->setColor(floatParams[0], floatParams[1], floatParams[2]);
 	pobject->setPosition(floatParams[3], floatParams[4], floatParams[5]);
 	pobject->setScale(floatParams[6], floatParams[7], floatParams[8]);

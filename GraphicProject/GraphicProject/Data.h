@@ -2,6 +2,7 @@
 #include<vector>
 #include<gl/glut.h>
 
+
 using std::vector;
 using std::string;
 class Params {

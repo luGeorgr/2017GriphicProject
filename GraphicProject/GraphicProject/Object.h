@@ -29,7 +29,7 @@ protected:
 	int type;
 	int ID;
 	int drawMethod;//GL_QUADS...
-	float color[3] = {255};
+	float color[3] = {0};
 	float position[3] = {0};
 	float scale[3] = {1};//x y z
 	float rotate[3] = {0};

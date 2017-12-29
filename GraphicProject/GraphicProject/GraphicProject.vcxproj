@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{30A1A1CE-254C-4D65-AF4B-6F38732420C5}</ProjectGuid>
     <RootNamespace>GraphicProject</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,7 +126,9 @@
     <ClInclude Include="GetLastObjectInformationCommand.h" />
     <ClInclude Include="GetObjectInformationCommand.h" />
     <ClInclude Include="Model.h" />
+    <ClInclude Include="ObjByRead.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjFile.h" />
     <ClInclude Include="Observable.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="View.h" />
@@ -142,7 +144,9 @@
     <ClCompile Include="GetObjectInformationCommand.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ObjByRead.cpp" />
     <ClCompile Include="Object.cpp" />
+    <ClCompile Include="ObjFile.cpp" />
     <ClCompile Include="View.cpp" />
     <ClCompile Include="ViewModel.cpp" />
   </ItemGroup>

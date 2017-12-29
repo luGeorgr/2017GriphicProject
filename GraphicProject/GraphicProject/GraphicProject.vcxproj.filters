@@ -25,6 +25,9 @@
     <Filter Include="头文件\DrawMethod">
       <UniqueIdentifier>{c9f95b53-6470-4ed9-8dfa-50e76ab9b77d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\ReadObj">
+      <UniqueIdentifier>{e4fe54e2-0704-49b1-b4d1-4da940714689}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Observable.h">
@@ -78,6 +81,12 @@
     <ClInclude Include="DrawOneObjectWithOneMethodCommand.h">
       <Filter>头文件\Command</Filter>
     </ClInclude>
+    <ClInclude Include="ObjFile.h">
+      <Filter>头文件\ReadObj</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjByRead.h">
+      <Filter>头文件\Object</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Model.cpp">
@@ -115,6 +124,12 @@
     </ClCompile>
     <ClCompile Include="DrawOneObjectWithOneMethodCommand.cpp">
       <Filter>头文件\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFile.cpp">
+      <Filter>头文件\ReadObj</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjByRead.cpp">
+      <Filter>头文件\Object</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

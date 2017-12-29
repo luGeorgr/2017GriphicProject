@@ -41,9 +41,10 @@ int main(int argc, char *argv[]) {
 
 	Params test;
 	test.SetFloatParams(vector<float>{1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0});
-	test.SetIntParams(vector<int>{0});
+	test.SetIntParams(vector<int>{1});
 	pview->addObjectCommand->SetParams(test);
 	pview->addObjectCommand->exec();
+
 	test.SetIntParams(vector<int>{0,-1,0,0,0,0});
 	pview->drawObjectCommand->SetParams(test);
 	pview->drawObjectCommand->exec();

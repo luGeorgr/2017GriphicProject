@@ -3,6 +3,7 @@
 #include"Changes.h"
 #include"Object.h"
 #include"Cube.h"
+#include"ObjByRead.h"
 class Model : public Observable
 {
 private:
