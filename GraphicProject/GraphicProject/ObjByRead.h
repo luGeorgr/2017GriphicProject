@@ -7,13 +7,15 @@ private:
 	int setPoint();
 	int setNormal();
 	int setTexCoord();
-	int setDrawMethod();
+	int setDrawMethod(int m);
+	string file;
 
 public:
-	ObjByRead() :Object(1) {
+	ObjByRead(string f,int method) :Object(1) {
+		this->file = f;
 		setPoint();
 		setNormal();
 		setTexCoord();
-		setDrawMethod();
+		setDrawMethod(method);
 	}
 };
