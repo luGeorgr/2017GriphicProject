@@ -16,7 +16,7 @@ void display() {//it's just a test.We may create light class and eye class.
 	gluPerspective(30.0f, 600 / 400, 0.1f, 100.0f);
 	glMatrixMode(GL_MODELVIEW);							
 	glLoadIdentity();
-	gluLookAt(10, 1, 1, 0, 0, 1, 0, 0, 1);
+	gluLookAt(5, 0, 0, 0, 0, 1, 0, 0, 1);
 	for (auto it : pview->DrawList) {
 		printf("hello world");
 		it->DrawObject();
@@ -45,6 +45,7 @@ int main(int argc, char *argv[]) {
 	pview->addObjectCommand->SetParams(test);
 	pview->addObjectCommand->exec();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	test.SetIntParams(vector<int>{0,-1,0,0,0,0});
 =======
@@ -53,6 +54,9 @@ int main(int argc, char *argv[]) {
 	pview->addObjectCommand->exec();
 	test.SetIntParams(vector<int>{0,-1,0,0,0,0,1});
 >>>>>>> 57b621d2c9010b0351708115cb33183a91605a1f
+=======
+	test.SetIntParams(vector<int>{0,-1,0,0,0,0});
+>>>>>>> parent of 57b621d... resolve a bug
 	pview->drawObjectCommand->SetParams(test);
 	pview->drawObjectCommand->exec();
 	glutDisplayFunc(display);
