@@ -46,6 +46,7 @@ int main(int argc, char *argv[]) {
 	pview->addObjectCommand->exec();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	test.SetIntParams(vector<int>{0,-1,0,0,0,0});
 =======
@@ -54,6 +55,9 @@ int main(int argc, char *argv[]) {
 	pview->addObjectCommand->exec();
 	test.SetIntParams(vector<int>{0,-1,0,0,0,0,1});
 >>>>>>> 57b621d2c9010b0351708115cb33183a91605a1f
+=======
+	test.SetIntParams(vector<int>{0,-1,0,0,0,0});
+>>>>>>> parent of 57b621d... resolve a bug
 =======
 	test.SetIntParams(vector<int>{0,-1,0,0,0,0});
 >>>>>>> parent of 57b621d... resolve a bug
