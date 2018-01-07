@@ -33,7 +33,7 @@ private:
 		double normalz;
 	};
 	//u is the angle with x, v
-	Point getPoint(double u, double v)
+	Point calPoint(double u, double v)
 	{
 		double sinv = sin(PI*v), cosv = cos(PI*v), sinu = sin(PI2*u), cosu = cos(PI2*u);
 		double A = -2 * PI * PI * radius * radius * sinv;
