@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddObjectCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicDraw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Changes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cone.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawobjCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawObjectCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawOneObjectWithOneMethodCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetLastObjectInformationCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetObjectInformationCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="glext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="glui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HighGUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HitCheck.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjByRead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjDraw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Observable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Prism.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadTexCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureDraw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Trustum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="View.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AdjustObjectCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddOrDeleteLightCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetObjectAttributeCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyDraw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Snapshot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddObjectCommand.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cone.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylinder.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawobjCommand.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawObjectCommand.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawOneObjectWithOneMethodCommand.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetLastObjectInformationCommand.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetObjectInformationCommand.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HitCheck.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjByRead.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjDraw.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFile.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Prism.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadTexCommand.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureDraw.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Trustum.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="View.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewModel.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AdjustObjectCommand.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddOrDeleteLightCommand.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BaiscDraw.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetObjectAttributeCommand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

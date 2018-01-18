@@ -12,12 +12,12 @@ public:
 		textureMethod = method;
 	}
 	virtual int DrawObject();
-	void addTex(shared_ptr<Texture> Tex) {
+	void addTex(shared_ptr<Texture>& Tex) {
 		textures.push_back(Tex);
 	}
 	// void Set(...);
 
 private:
-	int textureMethod;  // e.g. GL_TEXTURE_2D
+	int textureMethod = 0;  // e.g. GL_TEXTURE_2D
 	vector<shared_ptr<Texture>> textures;
 };

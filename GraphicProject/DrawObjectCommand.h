@@ -4,7 +4,7 @@
 #include "DrawOneObjectWithOneMethodCommand.h"
 
 class DrawObjectCommand :public BasicCommand {
-// intParams the first 5 number are drawmethods(-1 stop), then objects followed, -1, tex index1 index2 
+// intParams the first inputs are drawmethods(-1 stop), then objects follows, -1, texindex1 texindex2 
 private:
 	shared_ptr<DrawOneObjectWithOneMethodCommand> drawOneObjectWithOneMethodCommand;
 

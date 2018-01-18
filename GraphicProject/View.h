@@ -4,13 +4,24 @@
 #include "Commands.h"
 #include "Changes.h"
 #include "BasicDraw.h"
-
+#include "TextureDraw.h"
+#include "ObjDraw.h"
+#include"SkyDraw.h"
 class View : public Observer {
 // public for test
 public:
-	shared_ptr<BasicCommand> addObjectCommand, getLastObjectInformationCommand, 
-		drawObjectCommand, getObjectInformationCommand, readTexCommand;
-
+	shared_ptr<BasicCommand> addObjectCommand, getLastObjectInformationCommand,
+		drawObjectCommand, getObjectInformationCommand, readTexCommand, drawobjCommand, adjustobjectCommand, addOrDeleteLightCommand,
+		setObjectAttributeCommand;
+private:
+	shared_ptr<BasicDraw> findDrawFromID(const int id)
+	{
+		if (id < 0)return nullptr;
+		for (auto i : DrawList)
+			if (i->getID() == id)
+				return i;
+		return nullptr;
+	}
 public:
 	vector<shared_ptr<BasicDraw> > DrawList;
 	View();
@@ -26,6 +37,10 @@ public:
 		getLastObjectInformationCommand = commands[index++];
 		getObjectInformationCommand = commands[index++];
 		readTexCommand = commands[index++];
+		drawobjCommand = commands[index++];
+		adjustobjectCommand = commands[index++];
+		addOrDeleteLightCommand = commands[index++];
+		setObjectAttributeCommand = commands[index++];
 		// ÃüÁîµÄ°ó¶¨
 	}
 };

@@ -2,5 +2,5 @@
 
 void AddObjectCommand::exec()
 {
-	pmodel->AddObject(this->params.GetFloatParams(), this->params.GetIntParams());
+	pmodel->AddObject(this->params.GetFloatParams(), this->params.GetIntParams(),this->params.GetStringParams());
 }

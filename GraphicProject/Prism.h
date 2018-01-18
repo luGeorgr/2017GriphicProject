@@ -1,8 +1,7 @@
-#pragma once
-
-#include "Object.h"
-
-class Cube : public Object {
+#include"Object.h"
+#define PI 3.14159265358979323846
+class Prism :public Object
+{
 public:
 	void GeneratorHitCube() {
 
@@ -13,11 +12,12 @@ public:
 		}
 		this->hitCubes.push_back(GenerateOBB(pv));
 	}
-	Cube() : Object(0) {
-		setPoint();  // override virtual function
-		setNormal();  // override virtual function
-		setTexCoord();  // override virtual function
-		setDrawMethod();  // override virtual function
+	Prism(int numOfFace, float raduis, float height) :Object(4), numOfFace(numOfFace), radius(raduis), height(height)
+	{
+		setPoint();
+		setNormal();
+		setTexCoord();
+		setDrawMethod();
 		GeneratorHitCube();
 	}
 private:
@@ -25,4 +25,7 @@ private:
 	int setNormal();
 	int setTexCoord();
 	int setDrawMethod();
+	int numOfFace;
+	float radius;
+	float height;
 };

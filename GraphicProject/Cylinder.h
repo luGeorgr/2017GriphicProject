@@ -1,8 +1,9 @@
 #pragma once
-
-#include "Object.h"
-
-class Cube : public Object {
+#pragma once
+#include"Object.h"
+#define PI 3.14159265358979323846
+class Cylinder :public Object
+{
 public:
 	void GeneratorHitCube() {
 
@@ -13,16 +14,21 @@ public:
 		}
 		this->hitCubes.push_back(GenerateOBB(pv));
 	}
-	Cube() : Object(0) {
-		setPoint();  // override virtual function
-		setNormal();  // override virtual function
-		setTexCoord();  // override virtual function
-		setDrawMethod();  // override virtual function
+	Cylinder(float raduis, float height) :Object(0), radius(raduis), height(height)
+	{
+		setPoint();
+		setNormal();
+		setTexCoord();
+		setDrawMethod();
 		GeneratorHitCube();
 	}
 private:
+	int RoundStepNum = 200;
 	int setPoint();
 	int setNormal();
 	int setTexCoord();
 	int setDrawMethod();
+	float radius;
+	float height;
 };
+

@@ -4,6 +4,10 @@ PFNGLMULTITEXCOORD2FARBPROC glMultiTexCoord2fARB = NULL;
 
 int TextureDraw::DrawObject()
 {
+	LightSetting();
+
+
+
 	glEnable(GL_COLOR_MATERIAL);
 	unsigned long mode;
 	if (textureMethod == 2) {  // mixed
@@ -40,13 +44,14 @@ int TextureDraw::DrawObject()
 	glBegin(drawMethod);
 	for (int i = 0; i < point3.size(); i += 3) {
 		if (textureMethod == 0)  // 2d
-			glTexCoord2i(texCoord3[i/3*2], texCoord3[i/3*2 + 1]);
+			glTexCoord2f(texCoord3[i/3*2], texCoord3[i/3*2 + 1]);
 		else if (textureMethod == 1)  // 1d
-			glTexCoord1i(texCoord3[i/3]);
+			glTexCoord1f(texCoord3[i/3]);
 		else if (textureMethod == 2) {  // mixed
 			glMultiTexCoord2fARB(GL_TEXTURE0_ARB, texCoord3[i / 3 * 2], texCoord3[i / 3 * 2 + 1]);
 			glMultiTexCoord2fARB(GL_TEXTURE1_ARB, texCoord3[i / 3 * 2], texCoord3[i / 3 * 2 + 1]);
 		}
+		glNormal3f(normal3[i], normal3[i + 1], normal3[i + 2]);
 		glVertex3f(point3[i], point3[i + 1], point3[i + 2]);
 	}
 	glEnd();

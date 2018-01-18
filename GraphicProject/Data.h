@@ -16,9 +16,10 @@ private:
 	vector<string> stringParams;
 	vector<vector<float> > vfloatParams;
 	vector<shared_ptr<Texture>> textureParams;
-
 public:
-	void setTexParam(vector<shared_ptr<Texture>>& texs) {
+	vector<void *>pointerList;
+	vector<int> smallIntParams;
+	void setTexParam(const vector<shared_ptr<Texture>>& texs) {
 		textureParams = texs;
 	}
 
@@ -39,6 +40,10 @@ public:
 	}
 
 	void SetVfloatParmas(const vector<vector<float> >& vfloatParams) {
+		this->vfloatParams = vfloatParams;
+	}
+
+	void SetVfloatParmas(const vector<vector<float> >&& vfloatParams) {
 		this->vfloatParams = vfloatParams;
 	}
 

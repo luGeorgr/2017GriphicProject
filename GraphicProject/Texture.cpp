@@ -1,6 +1,17 @@
 #include "Texture.h"
 int Texture::count = 0;
-unsigned char* Texture::load2DBmpFile(BITMAPINFOHEADER *bitmapInfoHeader)
+unsigned char * Texture::loadImageFile(BITMAPINFOHEADER *bitmapInfoHeader)
+{
+	img.Load(filename.c_str());
+	bitmapInfoHeader->biBitCount = img.GetBPP();
+	bitmapInfoHeader->biHeight = img.GetHeight();
+	bitmapInfoHeader->biWidth = img.GetWidth();
+	if (img.GetPitch()<0) //GetBits的作用就是获得纹理的位信息缓冲区指针，如果位图是从下到上， 则指向缓冲区末端，否则指向缓冲区首端。而img.GetPitch 就是起这个判断作用，小于 0 指向末端
+		return (unsigned char *)img.GetBits() + (img.GetPitch()*(img.GetHeight() - 1));
+	else
+		return (unsigned char *)img.GetBits();
+}
+unsigned char* Texture::load2DBmpFile(BITMAPINFOHEADER *bitmapInfoHeader)//no use
 {
 	FILE *filePtr;
 	BITMAPFILEHEADER bitmapFileHeader;	// bitmap file header
@@ -45,14 +56,18 @@ void Texture::load2DBmpTex()
 {
 	BITMAPINFOHEADER bitmapInfoHeader;
 	unsigned char* bitmapData;  // texture data
-	bitmapData = load2DBmpFile(&bitmapInfoHeader);  // call function above =====
+	bitmapData = loadImageFile(&bitmapInfoHeader);  // call function above =====
 	if (texType == 1) {
 		glBindTexture(GL_TEXTURE_2D, texture);
 		// 指定当前纹理的放大/缩小过滤方式
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, bitmapInfoHeader.biWidth, 
-			bitmapInfoHeader.biHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, bitmapData);
+		if(bitmapInfoHeader.biBitCount==32)
+			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, bitmapInfoHeader.biWidth, 
+				bitmapInfoHeader.biHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, bitmapData);
+		else
+			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, bitmapInfoHeader.biWidth,
+				bitmapInfoHeader.biHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, bitmapData);
 	}
 	else if (texType == 0) {
 		glBindTexture(GL_TEXTURE_1D, texture);
